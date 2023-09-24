@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookshelf Apps</title>
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Bookshelf Apps</h1>
+			<form id="book-form">
+				<h2>Tambah Buku Baru</h2>
+				<div>
+					<input type="text" id="title" placeholder="Judul Buku" />
+					<input type="text" id="author" placeholder="Penulis" />
+					<input type="number" id="year" placeholder="Tahun" />
+					<div>
+						<label for="isComplete">Selesai Dibaca</label>
+						<input type="checkbox" id="isComplete" />
+					</div>
+					<button type="submit" id="btn-submit">Tambahkan</button>
+				</div>
+			</form>
+
+			<div class="search-div">
+				<form id="search-form">
+					<input
+						type="text"
+						name="search"
+						id="search"
+						placeholder="Cari Judul Buku"
+					/>
+					<button type="submit">search</button>
+				</form>
+				<div>
+					<button onclick="showBooks()">see all</button>
+					<button onclick="deleteAllBook()">delete all</button>
+				</div>
+			</div>
+
+			<div class="bookshelf">
+				<div class="shelf" id="uncompleted">
+					<h2>Belum Selesai Dibaca</h2>
+					<div id="unCompletedList" class="flex-div"></div>
+				</div>
+				<div class="shelf" id="completed">
+					<h2>Selesai Dibaca</h2>
+					<ul id="completedList" class="flex-div"></ul>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

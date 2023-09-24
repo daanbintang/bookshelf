@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0056b3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #cecece;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    background: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 4px 0;
+}
+
+#book-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#book-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+#book-form div div {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bookshelf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shelf {
+    flex: 1;
+    padding: 10px;
+}
+
+.flex-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    border: 1px solid #007BFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background: red;
+}
+
+.search-div { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
